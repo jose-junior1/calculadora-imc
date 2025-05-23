@@ -1,0 +1,228 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: #ffe6e6;
+    }
+
+    section .container {
+        width: 85%;
+        height: 100lvh;
+        margin: 0 auto; 
+        padding: 10px;
+    }
+
+    .containerTitle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerLogoResponsive {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .containerTitle .title {
+        font-size: 24px;
+        border-bottom: 3px solid darkgreen;
+        border-radius: 70%;
+        padding: 10px;
+    }
+
+    .containerLogoResponsive .marcaResponsive {
+        display: block;
+        border: 1px solid;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        border: 1px dashed;
+        background-color: darkred;
+        color: #fff;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+
+    .marca {
+        display: none;
+    }
+
+    .containerForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .containerForm label {
+        margin-bottom: 8px;
+    }
+
+    .containerForm .containerFormresponsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerForm button {
+        width: 300px;
+        padding: 16px;
+        margin: 20px auto 0 auto;
+    }
+
+    .container .exibeResultado {
+        width: 100%;
+    }
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.containerTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    width: 180px;
+    color: rgb(0, 75, 0);
+    border-right: 3px solid darkgreen;
+}
+
+.subtitle {
+    color: #000;
+    font-size: 26px;
+}
+
+.marca {
+    border: 1px dashed;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: darkred;
+    color: #fff;
+    font-weight: bold;
+}
+
+.marcaResponsive {
+    display: none;
+}
+
+.containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.inputReduzido {
+    max-width: 100px;
+    font-size: 16px;
+    padding: 4px;
+    border: none;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.espacador {
+    margin: 0 10px;
+}
+
+button {
+    width: 100px;
+    padding: 8px;
+    margin-left: 10px;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+button:focus {
+    outline: 2px solid yellow;
+    outline-offset: 2px;
+}
+
+button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.exibeResultado {
+    margin: 40px auto 0 auto;
+    width: 70%;
+    border: 3px solid #e1e1e1;
+}
+
+.exibeResultado>p:first-child {
+    font-size: 24px;
+}
+
+.exibeResultado>p:first-child>span {
+    font-weight: bolder;
+    text-decoration: double underline;
+}
+
+.exibeResultado>p:last-child {
+    font-size: 32px;
+}
+
+.exibeResultado>p:last-child>span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Cores conforme a classificação */
+.abaixoPeso {
+    color: red;
+}
+
+.normal {
+    color: green;
+}
+
+.sobrepeso {
+    color: orange;
+}
+
+.obesidadeGrau1 {
+    color: orangered;
+}
+
+.obesidadeGrau2 {
+    color: red;
+}
+
+.obesidadeGrau3 {
+    color: darkred;
+}
+
+.erro {
+    background-color: #ffe6e6;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid red;
+    padding: 16px;
+    border-radius: 6px;
+}
