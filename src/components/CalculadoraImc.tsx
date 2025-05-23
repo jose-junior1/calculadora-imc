@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from './CalculadoraImc.module.css'
+import styles from './CalculadoraImc.module.css';
 
 const CalculadoraImc = () => {
     const [altura, setAltura] = useState<string>("");
@@ -84,7 +84,7 @@ const CalculadoraImc = () => {
                             id="altura"
                             type="number"
                             placeholder="Ex.: 1.83 (m)"
-                            inputMode="numeric"
+                            inputMode="decimal"
                             required
                         />
                     </div>
@@ -101,7 +101,7 @@ const CalculadoraImc = () => {
                             id="peso"
                             type="number"
                             placeholder="Ex.: 65.7 (kg)"
-                            inputMode="numeric"
+                            inputMode="decimal"
                             required
                         />
                         </div>
