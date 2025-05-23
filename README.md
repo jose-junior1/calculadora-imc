@@ -27,7 +27,6 @@ Aplicação web responsiva desenvolvida com **React** e **CSS Modules** para cal
 - [React](https://reactjs.org/)
 - TypeScript
 - CSS Modules
-- JavaScript (ES6+)
 - [Vite](https://vitejs.dev/) <!-- Ou `Create React App`, se for o seu caso -->
 
 ---
