@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# 📊 Calcule seu IMC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web responsiva desenvolvida com **React** e **CSS Modules** para calcular o Índice de Massa Corporal (IMC). A interface é simples, objetiva e adaptada para todos os tamanhos de tela.
 
-Currently, two official plugins are available:
+## 🔗 Acesse o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [https://app-imc-saude.vercel.app/](https://app-imc-saude.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- ✅ Cálculo instantâneo do IMC com base em altura e peso
+- ✅ Exibição da classificação do IMC:
+  - Abaixo do peso
+  - Peso normal
+  - Sobrepeso
+  - Obesidade Grau 1, 2 e 3
+- ✅ Layout 100% responsivo (mobile-first)
+- ✅ Cores e feedback visual conforme a faixa de IMC
+- ✅ Estilização com **CSS Modules** para maior organização
+
+---
+
+## ⚙️ Tecnologias utilizadas
+
+- [React](https://reactjs.org/)
+- CSS Modules
+- JavaScript (ES6+)
+- [Vite](https://vitejs.dev/) <!-- Ou `Create React App`, se for o seu caso -->
+
+---
+
+## 🧪 Como rodar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/jose-junior1/calculadora-imc.git
+
+# Acesse o diretório
+cd calculadora-imc
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📷 Preview
+<div align="center">
+  <img src="./preview.png" alt="preview" />
+</div>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👨‍💻 Autor
+Desenvolvido por José Junior
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+💼 GitHub - @jose-junior1
