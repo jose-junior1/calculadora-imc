@@ -66,10 +66,23 @@
         flex-direction: column;
     }
 
+    .container .description {
+        margin: 0;
+        text-align: center;
+    }
+
+    .containerForm .inputReduzido {
+        padding: 20px 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
     .containerForm button {
         width: 300px;
         padding: 16px;
         margin: 20px auto 0 auto;
+        font-size: 28px;
+        text-transform: uppercase;
     }
 
     .container .exibeResultado {
@@ -92,7 +105,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .title {
@@ -104,6 +116,12 @@
 .subtitle {
     color: #000;
     font-size: 26px;
+}
+
+.description {
+    color: rgb(77, 77, 77);
+    margin-left: 15%;
+    font-style: italic;
 }
 
 .marca {
@@ -126,6 +144,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 label {

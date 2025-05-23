@@ -71,6 +71,9 @@ const CalculadoraImc = () => {
                         Dev José
                     </span>
                 </div>
+                    <span className={styles.description}>
+                        *O objetivo é apenas te dar uma base sobre a sua saúde
+                    </span>
                 <form className={styles.containerForm} onSubmit={handleSubmit}>
                     <div className={styles.containerFormresponsive}>
                         <label htmlFor="altura">Altura: </label>
